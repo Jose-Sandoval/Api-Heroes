@@ -56,8 +56,8 @@ public class HeroeController {
 		return heroe;
 	}
 	
-	@DeleteMapping("/heroes")
-	public void eliminar(@RequestParam int id) {
+	@DeleteMapping("/heroes/{id}")
+	public void eliminar(@PathVariable("id") int id) {
 		heroeService.elminar(id);		
 	}
 }

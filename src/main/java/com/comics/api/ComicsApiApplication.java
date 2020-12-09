@@ -18,7 +18,7 @@ public class ComicsApiApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/**").allowedOrigins("http://127.0.0.1:5500").allowedMethods("*");
+				registry.addMapping("/api/**").allowedOrigins("http://127.0.0.1:5500", "https://jose-sandoval.github.io").allowedMethods("*");
 			}
 		};
 	}
